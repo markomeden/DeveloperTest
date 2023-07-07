@@ -7,23 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327C45212A58750500B75295 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45202A58750500B75295 /* Teacher.swift */; };
+		327C45232A58759D00B75295 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45222A58759D00B75295 /* Student.swift */; };
+		327C45262A587B8000B75295 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 327C45252A587B8000B75295 /* SDWebImage */; };
 		32B810A52A56F78F00C5A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A42A56F78F00C5A64F /* AppDelegate.swift */; };
 		32B810A72A56F78F00C5A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A62A56F78F00C5A64F /* SceneDelegate.swift */; };
-		32B810A92A56F78F00C5A64F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A82A56F78F00C5A64F /* ViewController.swift */; };
 		32B810AC2A56F78F00C5A64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B810AA2A56F78F00C5A64F /* Main.storyboard */; };
 		32B810AE2A56F79100C5A64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B810AD2A56F79100C5A64F /* Assets.xcassets */; };
 		32B810B12A56F79100C5A64F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B810AF2A56F79100C5A64F /* LaunchScreen.storyboard */; };
+		32B810BB2A56FDAB00C5A64F /* TeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810BA2A56FDAB00C5A64F /* TeachersViewController.swift */; };
+		32B810BD2A56FDB800C5A64F /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810BC2A56FDB800C5A64F /* StudentsViewController.swift */; };
+		32B810BF2A5706CE00C5A64F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810BE2A5706CE00C5A64F /* TabBarViewController.swift */; };
+		32B810C32A57081B00C5A64F /* SchoolAppBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810C22A57081B00C5A64F /* SchoolAppBannerView.swift */; };
+		32B810C52A57083100C5A64F /* SchoolAppBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B810C42A57083100C5A64F /* SchoolAppBannerView.xib */; };
+		32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810C62A570DA500C5A64F /* ContainerViewController.swift */; };
+		32B810CB2A570E8F00C5A64F /* TeacherCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810C92A570E8F00C5A64F /* TeacherCardTableViewCell.swift */; };
+		32B810CC2A570E8F00C5A64F /* TeacherCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B810CA2A570E8F00C5A64F /* TeacherCardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		327C45202A58750500B75295 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		327C45222A58759D00B75295 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		32B810A12A56F78F00C5A64F /* Developer Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Developer Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B810A42A56F78F00C5A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B810A62A56F78F00C5A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32B810A82A56F78F00C5A64F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32B810AB2A56F78F00C5A64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32B810AD2A56F79100C5A64F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B810B02A56F79100C5A64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B810B22A56F79100C5A64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B810BA2A56FDAB00C5A64F /* TeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
+		32B810BC2A56FDB800C5A64F /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		32B810BE2A5706CE00C5A64F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		32B810C22A57081B00C5A64F /* SchoolAppBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAppBannerView.swift; sourceTree = "<group>"; };
+		32B810C42A57083100C5A64F /* SchoolAppBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolAppBannerView.xib; sourceTree = "<group>"; };
+		32B810C62A570DA500C5A64F /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		32B810C92A570E8F00C5A64F /* TeacherCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCardTableViewCell.swift; sourceTree = "<group>"; };
+		32B810CA2A570E8F00C5A64F /* TeacherCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherCardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +50,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327C45262A587B8000B75295 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		327C451F2A5874B300B75295 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				327C45202A58750500B75295 /* Teacher.swift */,
+				327C45222A58759D00B75295 /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		32B810982A56F78F00C5A64F = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +87,61 @@
 			children = (
 				32B810A42A56F78F00C5A64F /* AppDelegate.swift */,
 				32B810A62A56F78F00C5A64F /* SceneDelegate.swift */,
-				32B810A82A56F78F00C5A64F /* ViewController.swift */,
-				32B810AA2A56F78F00C5A64F /* Main.storyboard */,
+				32B810B92A56FD8D00C5A64F /* ViewControllers */,
+				32B810C12A5707F200C5A64F /* Swift */,
+				32B810B82A56FD8400C5A64F /* Storyboards */,
 				32B810AD2A56F79100C5A64F /* Assets.xcassets */,
-				32B810AF2A56F79100C5A64F /* LaunchScreen.storyboard */,
 				32B810B22A56F79100C5A64F /* Info.plist */,
 			);
 			path = "Developer Test";
+			sourceTree = "<group>";
+		};
+		32B810B82A56FD8400C5A64F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				32B810AA2A56F78F00C5A64F /* Main.storyboard */,
+				32B810AF2A56F79100C5A64F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32B810B92A56FD8D00C5A64F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32B810BA2A56FDAB00C5A64F /* TeachersViewController.swift */,
+				32B810BC2A56FDB800C5A64F /* StudentsViewController.swift */,
+				32B810BE2A5706CE00C5A64F /* TabBarViewController.swift */,
+				32B810C62A570DA500C5A64F /* ContainerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32B810C02A5707BD00C5A64F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32B810C22A57081B00C5A64F /* SchoolAppBannerView.swift */,
+				32B810C42A57083100C5A64F /* SchoolAppBannerView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32B810C12A5707F200C5A64F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				327C451F2A5874B300B75295 /* Models */,
+				32B810C82A570E5B00C5A64F /* Cells */,
+				32B810C02A5707BD00C5A64F /* Views */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		32B810C82A570E5B00C5A64F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				32B810C92A570E8F00C5A64F /* TeacherCardTableViewCell.swift */,
+				32B810CA2A570E8F00C5A64F /* TeacherCardTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +160,9 @@
 			dependencies = (
 			);
 			name = "Developer Test";
+			packageProductDependencies = (
+				327C45252A587B8000B75295 /* SDWebImage */,
+			);
 			productName = "Developer Test";
 			productReference = 32B810A12A56F78F00C5A64F /* Developer Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +191,9 @@
 				Base,
 			);
 			mainGroup = 32B810982A56F78F00C5A64F;
+			packageReferences = (
+				327C45242A587B8000B75295 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 32B810A22A56F78F00C5A64F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B810B12A56F79100C5A64F /* LaunchScreen.storyboard in Resources */,
+				32B810CC2A570E8F00C5A64F /* TeacherCardTableViewCell.xib in Resources */,
 				32B810AE2A56F79100C5A64F /* Assets.xcassets in Resources */,
+				32B810C52A57083100C5A64F /* SchoolAppBannerView.xib in Resources */,
 				32B810AC2A56F78F00C5A64F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B810A92A56F78F00C5A64F /* ViewController.swift in Sources */,
+				32B810BB2A56FDAB00C5A64F /* TeachersViewController.swift in Sources */,
 				32B810A52A56F78F00C5A64F /* AppDelegate.swift in Sources */,
+				32B810CB2A570E8F00C5A64F /* TeacherCardTableViewCell.swift in Sources */,
+				327C45232A58759D00B75295 /* Student.swift in Sources */,
+				32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */,
+				32B810BD2A56FDB800C5A64F /* StudentsViewController.swift in Sources */,
+				32B810BF2A5706CE00C5A64F /* TabBarViewController.swift in Sources */,
+				327C45212A58750500B75295 /* Teacher.swift in Sources */,
+				32B810C32A57081B00C5A64F /* SchoolAppBannerView.swift in Sources */,
 				32B810A72A56F78F00C5A64F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		327C45242A587B8000B75295 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		327C45252A587B8000B75295 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 327C45242A587B8000B75295 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32B810992A56F78F00C5A64F /* Project object */;
 }

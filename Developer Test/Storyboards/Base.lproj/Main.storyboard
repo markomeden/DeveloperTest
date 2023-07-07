@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5p-TQ-yxe">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teachers-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TeachersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TeachersViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U9e-0G-jbc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="U9e-0G-jbc" secondAttribute="bottom" id="8fe-hA-Cfc"/>
+                            <constraint firstItem="U9e-0G-jbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aua-US-dUu"/>
+                            <constraint firstItem="U9e-0G-jbc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OMa-Tv-2KG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U9e-0G-jbc" secondAttribute="trailing" id="hms-CN-apS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Teachers" image="Chalkboard_Teacher" selectedImage="Chalkboard_Teacher_Black" id="qlr-IZ-rR1"/>
+                    <navigationItem key="navigationItem" title="Teachers" id="sS2-ER-RQ7"/>
+                    <connections>
+                        <outlet property="tableView" destination="U9e-0G-jbc" id="iJP-vw-vu9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856" y="-3"/>
+        </scene>
+        <!--Students-->
+        <scene sceneID="uS5-WF-9vL">
+            <objects>
+                <viewController storyboardIdentifier="StudentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="abo-VJ-NEw" customClass="StudentsViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BVb-I6-s92">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xBD-NJ-nQp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="csC-8q-2WM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xBD-NJ-nQp" firstAttribute="trailing" secondItem="csC-8q-2WM" secondAttribute="trailing" id="HKJ-nG-b0N"/>
+                            <constraint firstItem="xBD-NJ-nQp" firstAttribute="leading" secondItem="csC-8q-2WM" secondAttribute="leading" id="VQl-Mk-IVY"/>
+                            <constraint firstAttribute="bottom" secondItem="xBD-NJ-nQp" secondAttribute="bottom" id="Yp9-wp-EOE"/>
+                            <constraint firstItem="xBD-NJ-nQp" firstAttribute="top" secondItem="BVb-I6-s92" secondAttribute="top" id="a2L-f7-jGB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Students" image="Graduation_Cap" selectedImage="Graduation_Cap_Black" id="VbE-5n-eUm"/>
+                    <navigationItem key="navigationItem" title="Students" id="YPd-sz-Pzl"/>
+                    <connections>
+                        <outlet property="tableView" destination="xBD-NJ-nQp" id="L8o-UX-pd9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dui-bl-wT4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856" y="616"/>
+        </scene>
+        <!--SchoolApp-->
+        <scene sceneID="9n4-WT-2zQ">
+            <objects>
+                <viewController id="Wc3-xq-5SP" customClass="ContainerViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QRA-dv-6aK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlJ-V1-Alj">
+                                <rect key="frame" x="0.0" y="135" width="393" height="683"/>
+                                <connections>
+                                    <segue destination="ggA-Se-dDV" kind="embed" id="fcS-qE-dtO"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHA-dw-FQy" customClass="SchoolAppBannerView" customModule="Developer_Test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="76"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="Gr1-9L-c8W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bRs-lE-mHD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZlJ-V1-Alj" firstAttribute="leading" secondItem="bRs-lE-mHD" secondAttribute="leading" id="2la-jT-ope"/>
+                            <constraint firstItem="bRs-lE-mHD" firstAttribute="bottom" secondItem="ZlJ-V1-Alj" secondAttribute="bottom" id="Gx8-ra-oZP"/>
+                            <constraint firstItem="ZlJ-V1-Alj" firstAttribute="top" secondItem="cHA-dw-FQy" secondAttribute="bottom" id="cOa-Bd-wPh"/>
+                            <constraint firstItem="cHA-dw-FQy" firstAttribute="top" secondItem="bRs-lE-mHD" secondAttribute="top" id="n7I-uR-Ing"/>
+                            <constraint firstItem="cHA-dw-FQy" firstAttribute="leading" secondItem="bRs-lE-mHD" secondAttribute="leading" id="pD7-Jb-hTi"/>
+                            <constraint firstItem="bRs-lE-mHD" firstAttribute="trailing" secondItem="ZlJ-V1-Alj" secondAttribute="trailing" id="tPe-Te-T6h"/>
+                            <constraint firstItem="bRs-lE-mHD" firstAttribute="trailing" secondItem="cHA-dw-FQy" secondAttribute="trailing" id="xDP-aP-nnN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SchoolApp" id="nZQ-Ga-Muz"/>
+                    <connections>
+                        <outlet property="containerView" destination="ZlJ-V1-Alj" id="F7n-02-CVN"/>
+                        <outlet property="schoolAppBannerView" destination="cHA-dw-FQy" id="SCy-sN-Xlq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzf-3z-5eJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="310.56338028169017"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="3b7-Mf-bmM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ggA-Se-dDV" customClass="TabBarViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rSn-iC-Htb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NXr-Sz-eTi"/>
+                        <segue destination="abo-VJ-NEw" kind="relationship" relationship="viewControllers" id="snd-0X-LQM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGf-gy-WME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875.5725190839694" y="310.56338028169017"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="era-Mj-OOZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="X5p-TQ-yxe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZF-Mk-DZT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wc3-xq-5SP" kind="relationship" relationship="rootViewController" id="MGW-Kt-uzw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JE4-uN-r1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="310.56338028169017"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chalkboard_Teacher" width="24.333333969116211" height="24"/>
+        <image name="Chalkboard_Teacher_Black" width="24.333333969116211" height="24"/>
+        <image name="Graduation_Cap" width="24.333333969116211" height="24"/>
+        <image name="Graduation_Cap_Black" width="24.333333969116211" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
