@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TeacherCardTableViewCell: UITableViewCell {
     
@@ -19,6 +20,11 @@ class TeacherCardTableViewCell: UITableViewCell {
     @IBOutlet weak var contactLabel: UILabel!
     
     var inset: CGFloat = 8
+    
+    var teacher: Teacher?
+    var school: School?
+    var description_: Description?
+    var student: Student?
     
     override var frame: CGRect {
         get {
@@ -60,9 +66,31 @@ class TeacherCardTableViewCell: UITableViewCell {
         contactView.layer.masksToBounds = true
         frontView.layer.cornerRadius = 10
         frontView.layer.masksToBounds = true
+        profileImage.layer.cornerRadius = profileImage.frame.height / 2
+        profileImage.layer.masksToBounds = true
     }
     
-    func setupCell(teacher: Teacher) {
+    func setupCell(teacher: Teacher, school: School, description: Description) {
+        self.teacher = teacher
+        self.school = school
+        self.description_ = description
         
+        profileImage.sd_setImage(with: URL(string: teacher.image_url), placeholderImage: UIImage(named: "Izidor"))
+        profileFullName.text = teacher.name
+        profileClass.text = teacher.class_ + " teacher"
+        universityText.text = school.name
+        universityImage.sd_setImage(with: URL(string: school.image_url), placeholderImage: UIImage(named: "Izidor"))
+    }
+    
+    func setupCell(student: Student, school: School, description: Description) {
+        self.student = student
+        self.school = school
+        self.description_ = description
+        
+        profileImage.image = UIImage(named: "Izidor")
+        profileFullName.text = student.name
+        profileClass.text = "Student"
+        universityText.text = school.name
+        universityImage.sd_setImage(with: URL(string: school.image_url), placeholderImage: UIImage(named: "Izidor"))
     }
 }

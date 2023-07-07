@@ -10,6 +10,8 @@
 		327C45212A58750500B75295 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45202A58750500B75295 /* Teacher.swift */; };
 		327C45232A58759D00B75295 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45222A58759D00B75295 /* Student.swift */; };
 		327C45262A587B8000B75295 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 327C45252A587B8000B75295 /* SDWebImage */; };
+		327C45282A58841F00B75295 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45272A58841F00B75295 /* Description.swift */; };
+		327C452A2A58845600B75295 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45292A58845600B75295 /* School.swift */; };
 		32B810A52A56F78F00C5A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A42A56F78F00C5A64F /* AppDelegate.swift */; };
 		32B810A72A56F78F00C5A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A62A56F78F00C5A64F /* SceneDelegate.swift */; };
 		32B810AC2A56F78F00C5A64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B810AA2A56F78F00C5A64F /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		327C45202A58750500B75295 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		327C45222A58759D00B75295 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		327C45272A58841F00B75295 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		327C45292A58845600B75295 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		32B810A12A56F78F00C5A64F /* Developer Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Developer Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B810A42A56F78F00C5A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B810A62A56F78F00C5A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				327C45202A58750500B75295 /* Teacher.swift */,
 				327C45222A58759D00B75295 /* Student.swift */,
+				327C45272A58841F00B75295 /* Description.swift */,
+				327C45292A58845600B75295 /* School.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 				327C45232A58759D00B75295 /* Student.swift in Sources */,
 				32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */,
 				32B810BD2A56FDB800C5A64F /* StudentsViewController.swift in Sources */,
+				327C45282A58841F00B75295 /* Description.swift in Sources */,
+				327C452A2A58845600B75295 /* School.swift in Sources */,
 				32B810BF2A5706CE00C5A64F /* TabBarViewController.swift in Sources */,
 				327C45212A58750500B75295 /* Teacher.swift in Sources */,
 				32B810C32A57081B00C5A64F /* SchoolAppBannerView.swift in Sources */,

@@ -11,6 +11,10 @@ class TeachersViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var teachers: [Teacher] = []
+    var schools: [School] = []
+    var teacherDescriptions: [Description] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,8 +34,24 @@ class TeachersViewController: UIViewController {
     func fetchTeachers() {
         Task {
             do {
-                let teachers = try await fetchTeachersFromAPI()
-                print(teachers)
+                teachers = []
+                schools = []
+                teacherDescriptions = []
+                
+                teachers = try await fetchTeachersFromAPI()
+//                print(teachers)
+                
+                for item in teachers {
+                    schools.append(try await fetchSchool(id: item.school_id))
+                }
+//                print(schools)
+                
+                for item in teachers {
+                    teacherDescriptions.append(try await fetchTeacherDescription(id: item.id))
+                }
+//                print(teacherDescriptions)
+                
+                tableView.reloadData()
             } catch {
                 print(error)
             }
@@ -72,11 +92,12 @@ extension TeachersViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return teachers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherCardTableViewCell", for: indexPath) as! TeacherCardTableViewCell
+        cell.setupCell(teacher: teachers[indexPath.row], school: schools[indexPath.row], description: teacherDescriptions[indexPath.row])
         cell.selectionStyle = .none
         return cell
     }
@@ -87,6 +108,20 @@ extension TeachersViewController {
         let url = URL(string: "https://zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/teachers")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoded = try JSONDecoder().decode([Teacher].self, from: data)
+        return decoded
+    }
+    
+    func fetchSchool(id: Int) async throws -> School {
+        let url = URL(string: "https://zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/schools/\(id)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let decoded = try JSONDecoder().decode(School.self, from: data)
+        return decoded
+    }
+    
+    func fetchTeacherDescription(id: Int) async throws -> Description {
+        let url = URL(string: "https://zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/teachers/\(id)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let decoded = try JSONDecoder().decode(Description.self, from: data)
         return decoded
     }
 }
