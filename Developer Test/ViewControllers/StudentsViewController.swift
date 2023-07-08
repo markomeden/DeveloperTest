@@ -84,6 +84,14 @@ extension StudentsViewController : UITableViewDelegate {
         view.backgroundColor = .clear
         return view
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = AppManager.shared.instantiateViewController(viewController: "DetailsViewController", storyboard: "Main") as! DetailsViewController
+        viewController.student = students[indexPath.row]
+        viewController.school = schools[indexPath.row]
+        viewController.description_ = studentDescription[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 extension StudentsViewController : UITableViewDataSource {

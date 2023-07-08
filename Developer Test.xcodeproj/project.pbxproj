@@ -12,6 +12,16 @@
 		327C45262A587B8000B75295 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 327C45252A587B8000B75295 /* SDWebImage */; };
 		327C45282A58841F00B75295 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45272A58841F00B75295 /* Description.swift */; };
 		327C452A2A58845600B75295 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45292A58845600B75295 /* School.swift */; };
+		327C452C2A589F7C00B75295 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C452B2A589F7C00B75295 /* DetailsViewController.swift */; };
+		327C452F2A58A08D00B75295 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C452E2A58A08D00B75295 /* AppManager.swift */; };
+		327C45312A5940A400B75295 /* ContactView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C45302A5940A400B75295 /* ContactView.xib */; };
+		327C45332A5940B800B75295 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45322A5940B800B75295 /* ContactView.swift */; };
+		327C45392A5943E600B75295 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45382A5943E600B75295 /* BlueButton.swift */; };
+		327C453C2A5953E400B75295 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C453B2A5953E400B75295 /* ServicesView.swift */; };
+		327C453E2A5953F800B75295 /* ServicesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C453D2A5953F800B75295 /* ServicesView.xib */; };
+		327C45422A59744200B75295 /* ServiceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45412A59744200B75295 /* ServiceLabel.swift */; };
+		327C45442A59744D00B75295 /* ServiceLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327C45432A59744D00B75295 /* ServiceLabel.xib */; };
+		327C45472A59932F00B75295 /* ClickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45462A59932F00B75295 /* ClickableView.swift */; };
 		32B810A52A56F78F00C5A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A42A56F78F00C5A64F /* AppDelegate.swift */; };
 		32B810A72A56F78F00C5A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810A62A56F78F00C5A64F /* SceneDelegate.swift */; };
 		32B810AC2A56F78F00C5A64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B810AA2A56F78F00C5A64F /* Main.storyboard */; };
@@ -32,6 +42,16 @@
 		327C45222A58759D00B75295 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		327C45272A58841F00B75295 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		327C45292A58845600B75295 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		327C452B2A589F7C00B75295 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		327C452E2A58A08D00B75295 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		327C45302A5940A400B75295 /* ContactView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactView.xib; sourceTree = "<group>"; };
+		327C45322A5940B800B75295 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		327C45382A5943E600B75295 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		327C453B2A5953E400B75295 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		327C453D2A5953F800B75295 /* ServicesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesView.xib; sourceTree = "<group>"; };
+		327C45412A59744200B75295 /* ServiceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLabel.swift; sourceTree = "<group>"; };
+		327C45432A59744D00B75295 /* ServiceLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceLabel.xib; sourceTree = "<group>"; };
+		327C45462A59932F00B75295 /* ClickableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableView.swift; sourceTree = "<group>"; };
 		32B810A12A56F78F00C5A64F /* Developer Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Developer Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B810A42A56F78F00C5A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B810A62A56F78F00C5A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +90,66 @@
 				327C45292A58845600B75295 /* School.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		327C452D2A58A07600B75295 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				327C452E2A58A08D00B75295 /* AppManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		327C45352A59434000B75295 /* SchoolAppBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				32B810C22A57081B00C5A64F /* SchoolAppBannerView.swift */,
+				32B810C42A57083100C5A64F /* SchoolAppBannerView.xib */,
+			);
+			path = SchoolAppBannerView;
+			sourceTree = "<group>";
+		};
+		327C45362A59434D00B75295 /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				327C45322A5940B800B75295 /* ContactView.swift */,
+				327C45302A5940A400B75295 /* ContactView.xib */,
+			);
+			path = ContactView;
+			sourceTree = "<group>";
+		};
+		327C45372A59437400B75295 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				327C45382A5943E600B75295 /* BlueButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		327C453A2A5953BA00B75295 /* ServicesView */ = {
+			isa = PBXGroup;
+			children = (
+				327C453B2A5953E400B75295 /* ServicesView.swift */,
+				327C453D2A5953F800B75295 /* ServicesView.xib */,
+			);
+			path = ServicesView;
+			sourceTree = "<group>";
+		};
+		327C45402A59742C00B75295 /* ServiceLabel */ = {
+			isa = PBXGroup;
+			children = (
+				327C45412A59744200B75295 /* ServiceLabel.swift */,
+				327C45432A59744D00B75295 /* ServiceLabel.xib */,
+			);
+			path = ServiceLabel;
+			sourceTree = "<group>";
+		};
+		327C45452A59932200B75295 /* ClickableView */ = {
+			isa = PBXGroup;
+			children = (
+				327C45462A59932F00B75295 /* ClickableView.swift */,
+			);
+			path = ClickableView;
 			sourceTree = "<group>";
 		};
 		32B810982A56F78F00C5A64F = {
@@ -118,6 +198,7 @@
 				32B810BC2A56FDB800C5A64F /* StudentsViewController.swift */,
 				32B810BE2A5706CE00C5A64F /* TabBarViewController.swift */,
 				32B810C62A570DA500C5A64F /* ContainerViewController.swift */,
+				327C452B2A589F7C00B75295 /* DetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,8 +206,12 @@
 		32B810C02A5707BD00C5A64F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				32B810C22A57081B00C5A64F /* SchoolAppBannerView.swift */,
-				32B810C42A57083100C5A64F /* SchoolAppBannerView.xib */,
+				327C45452A59932200B75295 /* ClickableView */,
+				327C45402A59742C00B75295 /* ServiceLabel */,
+				327C453A2A5953BA00B75295 /* ServicesView */,
+				327C45362A59434D00B75295 /* ContactView */,
+				327C45352A59434000B75295 /* SchoolAppBannerView */,
+				327C45372A59437400B75295 /* Buttons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +219,7 @@
 		32B810C12A5707F200C5A64F /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				327C452D2A58A07600B75295 /* Managers */,
 				327C451F2A5874B300B75295 /* Models */,
 				32B810C82A570E5B00C5A64F /* Cells */,
 				32B810C02A5707BD00C5A64F /* Views */,
@@ -216,9 +302,12 @@
 			files = (
 				32B810B12A56F79100C5A64F /* LaunchScreen.storyboard in Resources */,
 				32B810CC2A570E8F00C5A64F /* TeacherCardTableViewCell.xib in Resources */,
+				327C45442A59744D00B75295 /* ServiceLabel.xib in Resources */,
 				32B810AE2A56F79100C5A64F /* Assets.xcassets in Resources */,
+				327C453E2A5953F800B75295 /* ServicesView.xib in Resources */,
 				32B810C52A57083100C5A64F /* SchoolAppBannerView.xib in Resources */,
 				32B810AC2A56F78F00C5A64F /* Main.storyboard in Resources */,
+				327C45312A5940A400B75295 /* ContactView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,12 +324,19 @@
 				327C45232A58759D00B75295 /* Student.swift in Sources */,
 				32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */,
 				32B810BD2A56FDB800C5A64F /* StudentsViewController.swift in Sources */,
+				327C45422A59744200B75295 /* ServiceLabel.swift in Sources */,
 				327C45282A58841F00B75295 /* Description.swift in Sources */,
+				327C45472A59932F00B75295 /* ClickableView.swift in Sources */,
+				327C452F2A58A08D00B75295 /* AppManager.swift in Sources */,
 				327C452A2A58845600B75295 /* School.swift in Sources */,
+				327C453C2A5953E400B75295 /* ServicesView.swift in Sources */,
 				32B810BF2A5706CE00C5A64F /* TabBarViewController.swift in Sources */,
 				327C45212A58750500B75295 /* Teacher.swift in Sources */,
 				32B810C32A57081B00C5A64F /* SchoolAppBannerView.swift in Sources */,
+				327C452C2A589F7C00B75295 /* DetailsViewController.swift in Sources */,
+				327C45332A5940B800B75295 /* ContactView.swift in Sources */,
 				32B810A72A56F78F00C5A64F /* SceneDelegate.swift in Sources */,
+				327C45392A5943E600B75295 /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
