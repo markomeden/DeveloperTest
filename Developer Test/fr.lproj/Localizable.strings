@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Developer Test
+
+  Created by Marko Meden User on 09/07/2023.
+  
+*/
+
+"Schoolapp" = "Application scolaire";
+"Contact" = "Contact";
+"Back" = "Dos";
+"Call" = "Appel";
+"Message" = "Message";
+"Email" = "E-mail";
+"Cancel" = "Annuler";
+"Teachers" = "Enseignants";
+"Students" = "Étudiants";
+"Class:" = "Classe:";
