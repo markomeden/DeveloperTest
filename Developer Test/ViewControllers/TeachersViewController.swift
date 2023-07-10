@@ -22,15 +22,18 @@ class TeachersViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupTableView()
         fetchTeachers()
-        
-        tabBarItem.title = "Teachers".localized()
+        changeLanguage()
         
         NotificationCenter.default.addObserver(self, selector: #selector(changeLanguage), name: NSNotification.Name(rawValue: "changeLanguage"), object: nil)
         
     }
     
     @objc private func changeLanguage() {
+        #if DEBUG
+        tabBarItem.title = "Teachers - DEV".localized()
+        #else
         tabBarItem.title = "Teachers".localized()
+        #endif
         tableView.reloadData()
     }
     

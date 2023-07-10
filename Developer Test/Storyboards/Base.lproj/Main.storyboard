@@ -12,7 +12,7 @@
         <!--Teachers-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="TeachersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TeachersViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeachersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TeachersViewController" customModule="Teachers_DEV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
         <!--Students-->
         <scene sceneID="uS5-WF-9vL">
             <objects>
-                <viewController storyboardIdentifier="StudentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="abo-VJ-NEw" customClass="StudentsViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StudentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="abo-VJ-NEw" customClass="StudentsViewController" customModule="Teachers_DEV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BVb-I6-s92">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
         <!--SchoolApp-->
         <scene sceneID="9n4-WT-2zQ">
             <objects>
-                <viewController id="Wc3-xq-5SP" customClass="ContainerViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wc3-xq-5SP" customClass="ContainerViewController" customModule="Teachers_DEV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QRA-dv-6aK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                                     <segue destination="ggA-Se-dDV" kind="embed" id="fcS-qE-dtO"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHA-dw-FQy" customClass="SchoolAppBannerView" customModule="Developer_Test" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHA-dw-FQy" customClass="SchoolAppBannerView" customModule="Teachers_DEV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="59" width="393" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -153,7 +153,7 @@
         <!--Details View Controller-->
         <scene sceneID="1FI-rQ-x0f">
             <objects>
-                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gkW-Dj-JHF" customClass="DetailsViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gkW-Dj-JHF" customClass="DetailsViewController" customModule="Teachers_DEV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i8y-kb-IWL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,7 +183,7 @@
                                     <action selector="goBack:" destination="gkW-Dj-JHF" eventType="touchUpInside" id="iTp-fP-mXJ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVM-OF-wmj" customClass="ContactView" customModule="Developer_Test" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVM-OF-wmj" customClass="ContactView" customModule="Teachers_DEV" customModuleProvider="target">
                                 <rect key="frame" x="77.666666666666686" y="253.66666666666663" width="238" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -213,7 +213,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="3b7-Mf-bmM">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ggA-Se-dDV" customClass="TabBarViewController" customModule="Developer_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ggA-Se-dDV" customClass="TabBarViewController" customModule="Teachers_DEV" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rSn-iC-Htb">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
