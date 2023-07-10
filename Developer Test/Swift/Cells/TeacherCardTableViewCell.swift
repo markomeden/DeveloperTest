@@ -9,6 +9,10 @@ import UIKit
 import SDWebImage
 import Localize_Swift
 
+protocol ContactCellDelegate : AnyObject {
+    func buttonPressed(index: Int)
+}
+
 class TeacherCardTableViewCell: UITableViewCell {
     
     @IBOutlet weak var frontView: UIView!
@@ -17,8 +21,7 @@ class TeacherCardTableViewCell: UITableViewCell {
     @IBOutlet weak var profileClass: UILabel!
     @IBOutlet weak var universityImage: UIImageView!
     @IBOutlet weak var universityText: UILabel!
-    @IBOutlet weak var contactView: UIView!
-    @IBOutlet weak var contactLabel: UILabel!
+    @IBOutlet weak var contactButton: BlueButton!
     
     var inset: CGFloat = 8
     
@@ -26,6 +29,9 @@ class TeacherCardTableViewCell: UITableViewCell {
     var school: School?
     var description_: Description?
     var student: Student?
+    var index: Int?
+    
+    weak var delegate: ContactCellDelegate?
     
     override var frame: CGRect {
         get {
@@ -48,7 +54,8 @@ class TeacherCardTableViewCell: UITableViewCell {
         // Initialization code
         
         setupCorners()
-        contactLabel.text = "Contact".localized()
+        contactButton.setTitle("Contact".localized(), for: .normal)
+        contactButton.becomeFirstResponder()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -64,37 +71,42 @@ class TeacherCardTableViewCell: UITableViewCell {
         contentView.layer.masksToBounds = true
         self.layer.cornerRadius = 10
         self.layer.masksToBounds = true
-        contactView.layer.cornerRadius = 10
-        contactView.layer.masksToBounds = true
+
         frontView.layer.cornerRadius = 10
         frontView.layer.masksToBounds = true
         profileImage.layer.cornerRadius = profileImage.frame.height / 2
         profileImage.layer.masksToBounds = true
     }
     
-    func setupCell(teacher: Teacher, school: School, description: Description) {
+    func setupCell(teacher: Teacher) {
         self.teacher = teacher
-        self.school = school
-        self.description_ = description
-        
         profileImage.sd_setImage(with: URL(string: teacher.image_url), placeholderImage: UIImage(named: "Izidor"))
         profileFullName.text = teacher.name
-        profileClass.text = teacher.class_ + " teacher"
-        universityText.text = school.name
-        universityImage.sd_setImage(with: URL(string: school.image_url), placeholderImage: UIImage(named: "Izidor"))
-        contactLabel.text = "Contact".localized()
+        profileClass.text = teacher.class_ + " teacher".localized()
+        contactButton.setTitle("Contact".localized(), for: .normal)
     }
     
-    func setupCell(student: Student, school: School, description: Description) {
+    func setupCell(student: Student) {
         self.student = student
-        self.school = school
-        self.description_ = description
-        
         profileImage.image = UIImage(named: "Izidor")
         profileFullName.text = student.name
         profileClass.text = "Student".localized()
+    }
+    
+    func setupCell(school: School) {
         universityText.text = school.name
         universityImage.sd_setImage(with: URL(string: school.image_url), placeholderImage: UIImage(named: "Izidor"))
-        contactLabel.text = "Contact".localized()
+    }
+    
+    func setupCell(description: Description) {
+        self.description_ = description
+    }
+    
+    func setupIndex(index: Int) {
+        self.index = index
+    }
+    
+    @IBAction func contactCellDelegate(_ sender: Any) {
+        delegate?.buttonPressed(index: index!)
     }
 }

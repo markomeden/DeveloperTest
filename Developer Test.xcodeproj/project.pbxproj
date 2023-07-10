@@ -51,8 +51,6 @@
 		323E3B8D2A5AD67B00449747 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		323E3B932A5AD6FE00449747 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		323E3B952A5AD70100449747 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		323E3BD22A5BFB3C00449747 /* Developer Test copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Developer Test copy-Info.plist"; path = "/Users/markomedenuser/Desktop/Developer Test/Developer Test copy-Info.plist"; sourceTree = "<absolute>"; };
-		323E3C052A5BFB3E00449747 /* Developer Test copy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Developer Test copy copy-Info.plist"; path = "/Users/markomedenuser/Desktop/Developer Test/Developer Test copy copy-Info.plist"; sourceTree = "<absolute>"; };
 		323E3C092A5BFD8400449747 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		323E3C0B2A5BFDE200449747 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		323E3C0D2A5BFE6C00449747 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -201,8 +199,6 @@
 			children = (
 				32B810A32A56F78F00C5A64F /* Developer Test */,
 				32B810A22A56F78F00C5A64F /* Products */,
-				323E3BD22A5BFB3C00449747 /* Developer Test copy-Info.plist */,
-				323E3C052A5BFB3E00449747 /* Developer Test copy copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};

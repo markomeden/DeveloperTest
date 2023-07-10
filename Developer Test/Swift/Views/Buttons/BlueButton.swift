@@ -33,10 +33,10 @@ class BlueButton: UIButton {
         }
     }
 
-    func setupFont() {
+    func setupFont(size: CGFloat = 16) {
         self.clipsToBounds = true
         self.setTitleColor(.white ,for: .normal)
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        self.titleLabel?.font = UIFont.systemFont(ofSize: size, weight: .semibold)
     }
     
     @IBInspectable override var bounds: CGRect {

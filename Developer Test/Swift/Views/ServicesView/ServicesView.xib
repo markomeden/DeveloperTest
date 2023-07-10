@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServicesView" customModule="Developer_Test" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServicesView" customModule="Teachers_DEV" customModuleProvider="target">
             <connections>
                 <outlet property="serviceLabel1" destination="BUi-vN-08A" id="pQE-06-u8y"/>
                 <outlet property="serviceLabel2" destination="hef-ws-2q0" id="KDr-r5-IUB"/>
@@ -50,28 +50,28 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVm-VK-lJ7">
                     <rect key="frame" x="60" y="287.66666666666669" width="273" height="208"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUi-vN-08A" customClass="ServiceLabel" customModule="Developer_Test" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUi-vN-08A" customClass="ServiceLabel" customModule="Teachers_DEV" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="273" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="ay4-W0-96K"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hef-ws-2q0" customClass="ServiceLabel" customModule="Developer_Test" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hef-ws-2q0" customClass="ServiceLabel" customModule="Teachers_DEV" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="51" width="273" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="4mf-uf-ve9"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tha-Ya-Nbj" customClass="ServiceLabel" customModule="Developer_Test" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tha-Ya-Nbj" customClass="ServiceLabel" customModule="Teachers_DEV" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="102" width="273" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="vEE-w7-iUm"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-iu-wlK" customClass="ServiceLabel" customModule="Developer_Test" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-iu-wlK" customClass="ServiceLabel" customModule="Teachers_DEV" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="158" width="273" height="50"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>

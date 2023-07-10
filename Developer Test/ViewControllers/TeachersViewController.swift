@@ -15,11 +15,13 @@ class TeachersViewController: UIViewController {
     var teachers: [Teacher] = []
     var schools: [School] = []
     var teacherDescriptions: [Description] = []
+    let servicesView = ServicesView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        servicesView.delegate = self
         setupTableView()
         fetchTeachers()
         changeLanguage()
@@ -56,20 +58,20 @@ class TeachersViewController: UIViewController {
                 teacherDescriptions = []
                 
                 teachers = try await fetchTeachersFromAPI()
-                
 //                print(teachers)
+                tableView.reloadData()
                 
                 for item in teachers {
                     schools.append(try await fetchSchool(id: item.school_id))
                 }
 //                print(schools)
+                tableView.reloadData()
                 
                 for item in teachers {
                     teacherDescriptions.append(try await fetchTeacherDescription(id: item.id))
                 }
 //                print(teacherDescriptions)
-                
-                tableView.reloadData()
+//                tableView.reloadData()
             } catch {
                 print(error)
             }
@@ -123,7 +125,15 @@ extension TeachersViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherCardTableViewCell", for: indexPath) as! TeacherCardTableViewCell
-        cell.setupCell(teacher: teachers[indexPath.row], school: schools[indexPath.row], description: teacherDescriptions[indexPath.row])
+        cell.setupCell(teacher: teachers[indexPath.row])
+        if !schools.isEmpty {
+            cell.setupCell(school: schools[indexPath.row])
+        }
+        if !teacherDescriptions.isEmpty {
+            cell.setupCell(description: teacherDescriptions[indexPath.row])
+        }
+        cell.setupIndex(index: indexPath.row)
+        cell.delegate = self
         cell.selectionStyle = .none
         return cell
     }
@@ -149,5 +159,25 @@ extension TeachersViewController {
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoded = try JSONDecoder().decode(Description.self, from: data)
         return decoded
+    }
+}
+
+extension TeachersViewController : ContactCellDelegate {
+    func buttonPressed(index: Int) {
+        print("selected contact with index \(index)")
+        let window = UIApplication.shared.windows.last!
+        window.addSubview(servicesView)
+    }
+}
+
+//extension TeachersViewController : ContactViewDelegate {
+//    func buttonPressed() {
+//        self.view.addSubview(servicesView)
+//    }
+//}
+
+extension TeachersViewController : ServiceLabelDelegate {
+    func cancelPressed() {
+        servicesView.removeFromSuperview()
     }
 }
