@@ -31,6 +31,7 @@ class StudentsViewController: UIViewController {
     
     @objc private func changeLanguage() {
         tabBarItem.title = "Students".localized()
+        servicesView.configureLabels()
     }
     
     deinit {

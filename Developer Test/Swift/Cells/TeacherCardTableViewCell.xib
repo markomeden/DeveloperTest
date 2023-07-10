@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="40" id="F9c-x3-oti"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Contacttttttt"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Contact"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Contact"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="blueButtonColor">
@@ -52,7 +52,7 @@
                             <constraint firstAttribute="height" constant="64" id="gBW-tR-9Na"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Izidor Strelec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-vA-vcH">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Izidor Strelec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-vA-vcH">
                         <rect key="frame" x="96" y="28" width="118.66666666666669" height="19.333333333333329"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                         <nil key="textColor"/>
@@ -124,7 +124,7 @@
     </objects>
     <designables>
         <designable name="766-bO-Xo9">
-            <size key="intrinsicContentSize" width="119" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="84.666666666666671" height="34.333333333333336"/>
         </designable>
     </designables>
     <resources>

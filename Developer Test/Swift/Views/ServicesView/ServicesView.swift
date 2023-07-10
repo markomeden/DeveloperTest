@@ -68,6 +68,12 @@ class ServicesView: UIView {
         
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         
+        configureLabels()
+        
+        addSubview(view)
+    }
+    
+    func configureLabels() {
         serviceLabel1.configure(type: .call)
         serviceLabel2.configure(type: .message)
         serviceLabel3.configure(type: .email)
@@ -76,8 +82,6 @@ class ServicesView: UIView {
         serviceLabel4.itemPressed = {
             self.delegate?.cancelPressed()
         }
-        
-        addSubview(view)
     }
     
     func loadViewFromNib() -> UIView {

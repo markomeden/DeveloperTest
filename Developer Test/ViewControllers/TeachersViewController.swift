@@ -37,6 +37,7 @@ class TeachersViewController: UIViewController {
         tabBarItem.title = "Teachers".localized()
         #endif
         tableView.reloadData()
+        servicesView.configureLabels()
     }
     
     deinit {
