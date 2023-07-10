@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 @IBDesignable
 class SchoolAppBannerView: UIView {
@@ -53,6 +54,7 @@ class SchoolAppBannerView: UIView {
         // Make the view stretch with containing view
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         
+        title.text = "Schoolapp".localized()
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
     }
@@ -65,4 +67,7 @@ class SchoolAppBannerView: UIView {
         return view
     }
 
+    func changeLanguage() {
+        title.text = "Schoolapp".localized()
+    }
 }

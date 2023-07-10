@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 protocol ContactViewDelegate : AnyObject {
     func buttonPressed()
@@ -82,13 +83,13 @@ class ContactView: UIView {
         if let t = teacher {
             profileImage.sd_setImage(with: URL(string: t.image_url ), placeholderImage: UIImage(named: "Izidor"))
             profileName.text = t.name
-            profileClass.text = "Class: \(t.class_)"
+            profileClass.text = "\("Class:".localized()) \(t.class_)"
         }
         
         if let s = student {
             profileImage.image = UIImage(named: "Izidor")
             profileName.text = s.name
-            profileClass.text = "Student"
+            profileClass.text = "Student".localized()
         }
         
         if let sc = school {

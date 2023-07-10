@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import Localize_Swift
 
 class TeacherCardTableViewCell: UITableViewCell {
     
@@ -47,6 +48,7 @@ class TeacherCardTableViewCell: UITableViewCell {
         // Initialization code
         
         setupCorners()
+        contactLabel.text = "Contact".localized()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -80,6 +82,7 @@ class TeacherCardTableViewCell: UITableViewCell {
         profileClass.text = teacher.class_ + " teacher"
         universityText.text = school.name
         universityImage.sd_setImage(with: URL(string: school.image_url), placeholderImage: UIImage(named: "Izidor"))
+        contactLabel.text = "Contact".localized()
     }
     
     func setupCell(student: Student, school: School, description: Description) {
@@ -89,8 +92,9 @@ class TeacherCardTableViewCell: UITableViewCell {
         
         profileImage.image = UIImage(named: "Izidor")
         profileFullName.text = student.name
-        profileClass.text = "Student"
+        profileClass.text = "Student".localized()
         universityText.text = school.name
         universityImage.sd_setImage(with: URL(string: school.image_url), placeholderImage: UIImage(named: "Izidor"))
+        contactLabel.text = "Contact".localized()
     }
 }

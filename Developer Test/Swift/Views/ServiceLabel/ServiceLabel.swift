@@ -13,6 +13,7 @@ enum ServiceType {
 }
 
 import UIKit
+import Localize_Swift
 
 class ServiceLabel: ClickableView {
 
@@ -87,16 +88,16 @@ class ServiceLabel: ClickableView {
     func configure(type: ServiceType) {
         switch type {
         case .call:
-            title.text = "Call"
+            title.text = "Call".localized()
             imageView.image = UIImage(named: "phone.fill")
         case .message:
-            title.text = "Message"
+            title.text = "Message".localized()
             imageView.image = UIImage(named: "bubble.middle.bottom.fill")
         case .email:
-            title.text = "Email"
+            title.text = "Email".localized()
             imageView.image = UIImage(named: "envelope.badge.fill")
         case .cancel:
-            title.text = "Cancel"
+            title.text = "Cancel".localized()
             imageView.image = UIImage(named: "multiply.circle.fill")
             
             title.textColor = UIColor(named: "SystemRed")

@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="arrowsAngle" destination="uLi-Jq-vvF" id="uc8-yH-BWl"/>
                 <outlet property="flag" destination="61f-og-VYg" id="77q-CJ-Iaw"/>
-                <outlet property="title" destination="SUb-Kk-Kzk" id="ZS5-qZ-WKZ"/>
+                <outlet property="title" destination="SUb-Kk-Kzk" id="aDJ-hv-Icr"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,14 +26,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrows Angle" translatesAutoresizingMaskIntoConstraints="NO" id="uLi-Jq-vvF">
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrows Angle" translatesAutoresizingMaskIntoConstraints="NO" id="uLi-Jq-vvF">
                     <rect key="frame" x="334" y="69" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="9Yz-7B-ZGm"/>
                         <constraint firstAttribute="width" constant="24" id="ieq-Sc-VHN"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="United Kingdom" translatesAutoresizingMaskIntoConstraints="NO" id="61f-og-VYg">
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="United Kingdom" translatesAutoresizingMaskIntoConstraints="NO" id="61f-og-VYg">
                     <rect key="frame" x="294" y="66" width="40" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="753-Xi-3Pq"/>

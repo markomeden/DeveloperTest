@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var contactView: ContactView!
     let servicesView = ServicesView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     
@@ -23,6 +25,8 @@ class DetailsViewController: UIViewController {
         
         contactView.delegate = self
         contactView.setupContact(teacher: teacher, student: student, school: school, description: description_)
+        
+        backButton.setTitle("Back".localized(), for: .normal)
     }
     
     @IBAction func goBack(_ sender: Any) {

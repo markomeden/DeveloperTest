@@ -6,14 +6,33 @@
 //
 
 import UIKit
+import Localize_Swift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        if let appLang = UserDefaults.standard.object(forKey: "appLanguage") as? String {
+//            Localize.setCurrentLanguage(appLang)
+////            Bundle.setLanguage(appLang)
+//            print("applang = \(appLang)")
+//        } else {
+//            Localize.setCurrentLanguage("en")
+//        }
+        
+        let locale = Locale.current
+        if locale.language.languageCode?.identifier == "fr" {
+            Localize.setCurrentLanguage("fr")
+            AppManager.shared.setPreferredLanguage(language: "fr")
+            print("Device language is French")
+        } else {
+            Localize.setCurrentLanguage("en")
+            AppManager.shared.setPreferredLanguage(language: "en")
+            print("Device language is not French")
+        }
+        
         return true
     }
 

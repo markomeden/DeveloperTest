@@ -1,0 +1,18 @@
+
+/* Class = "UITabBarItem"; title = "Students"; ObjectID = "VbE-5n-eUm"; */
+"VbE-5n-eUm.title" = "Students";
+
+/* Class = "UINavigationItem"; title = "Students"; ObjectID = "YPd-sz-Pzl"; */
+"YPd-sz-Pzl.title" = "Students";
+
+/* Class = "UINavigationItem"; title = "SchoolApp"; ObjectID = "nZQ-Ga-Muz"; */
+"nZQ-Ga-Muz.title" = "SchoolApp";
+
+/* Class = "UITabBarItem"; title = "Teachers"; ObjectID = "qlr-IZ-rR1"; */
+"qlr-IZ-rR1.title" = "Teachers";
+
+/* Class = "UINavigationItem"; title = "Teachers"; ObjectID = "sS2-ER-RQ7"; */
+"sS2-ER-RQ7.title" = "Teachers";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "ufQ-V0-bqO"; */
+"ufQ-V0-bqO.normalTitle" = "Back";

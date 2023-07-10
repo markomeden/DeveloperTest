@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323E3B8B2A5AAB8300449747 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 323E3B8A2A5AAB8300449747 /* Localize_Swift */; };
+		323E3B922A5AD6FE00449747 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 323E3B942A5AD6FE00449747 /* Localizable.strings */; };
+		323E3C0A2A5BFD8400449747 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 323E3C092A5BFD8400449747 /* Development.xcconfig */; };
+		323E3C0C2A5BFDE200449747 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 323E3C0B2A5BFDE200449747 /* Production.xcconfig */; };
+		323E3C0E2A5BFE6C00449747 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E3C0D2A5BFE6C00449747 /* Environment.swift */; };
 		327C45212A58750500B75295 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45202A58750500B75295 /* Teacher.swift */; };
 		327C45232A58759D00B75295 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45222A58759D00B75295 /* Student.swift */; };
 		327C45262A587B8000B75295 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 327C45252A587B8000B75295 /* SDWebImage */; };
@@ -35,9 +40,22 @@
 		32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810C62A570DA500C5A64F /* ContainerViewController.swift */; };
 		32B810CB2A570E8F00C5A64F /* TeacherCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B810C92A570E8F00C5A64F /* TeacherCardTableViewCell.swift */; };
 		32B810CC2A570E8F00C5A64F /* TeacherCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B810CA2A570E8F00C5A64F /* TeacherCardTableViewCell.xib */; };
+		32E62B012A5A98E5006999E7 /* LanguageSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E62AFF2A5A98E5006999E7 /* LanguageSelectCollectionViewCell.swift */; };
+		32E62B022A5A98E6006999E7 /* LanguageSelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E62B002A5A98E5006999E7 /* LanguageSelectCollectionViewCell.xib */; };
+		32E62B052A5A9A85006999E7 /* LanguageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E62B032A5A9A85006999E7 /* LanguageCollectionViewCell.swift */; };
+		32E62B062A5A9A85006999E7 /* LanguageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E62B042A5A9A85006999E7 /* LanguageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323E3B8C2A5AD67B00449747 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		323E3B8D2A5AD67B00449747 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		323E3B932A5AD6FE00449747 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		323E3B952A5AD70100449747 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		323E3BD22A5BFB3C00449747 /* Developer Test copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Developer Test copy-Info.plist"; path = "/Users/markomedenuser/Desktop/Developer Test/Developer Test copy-Info.plist"; sourceTree = "<absolute>"; };
+		323E3C052A5BFB3E00449747 /* Developer Test copy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Developer Test copy copy-Info.plist"; path = "/Users/markomedenuser/Desktop/Developer Test/Developer Test copy copy-Info.plist"; sourceTree = "<absolute>"; };
+		323E3C092A5BFD8400449747 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		323E3C0B2A5BFDE200449747 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		323E3C0D2A5BFE6C00449747 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		327C45202A58750500B75295 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		327C45222A58759D00B75295 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		327C45272A58841F00B75295 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
@@ -67,6 +85,10 @@
 		32B810C62A570DA500C5A64F /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		32B810C92A570E8F00C5A64F /* TeacherCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCardTableViewCell.swift; sourceTree = "<group>"; };
 		32B810CA2A570E8F00C5A64F /* TeacherCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherCardTableViewCell.xib; sourceTree = "<group>"; };
+		32E62AFF2A5A98E5006999E7 /* LanguageSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		32E62B002A5A98E5006999E7 /* LanguageSelectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageSelectCollectionViewCell.xib; sourceTree = "<group>"; };
+		32E62B032A5A9A85006999E7 /* LanguageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCollectionViewCell.swift; sourceTree = "<group>"; };
+		32E62B042A5A9A85006999E7 /* LanguageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +97,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				327C45262A587B8000B75295 /* SDWebImage in Frameworks */,
+				323E3B8B2A5AAB8300449747 /* Localize_Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323E3C082A5BFD5E00449747 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				323E3C0D2A5BFE6C00449747 /* Environment.swift */,
+				323E3C092A5BFD8400449747 /* Development.xcconfig */,
+				323E3C0B2A5BFDE200449747 /* Production.xcconfig */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
 		327C451F2A5874B300B75295 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,11 +185,24 @@
 			path = ClickableView;
 			sourceTree = "<group>";
 		};
+		327C45482A59A70F00B75295 /* LanguageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				32E62AFF2A5A98E5006999E7 /* LanguageSelectCollectionViewCell.swift */,
+				32E62B002A5A98E5006999E7 /* LanguageSelectCollectionViewCell.xib */,
+				32E62B032A5A9A85006999E7 /* LanguageCollectionViewCell.swift */,
+				32E62B042A5A9A85006999E7 /* LanguageCollectionViewCell.xib */,
+			);
+			path = LanguageCollectionView;
+			sourceTree = "<group>";
+		};
 		32B810982A56F78F00C5A64F = {
 			isa = PBXGroup;
 			children = (
 				32B810A32A56F78F00C5A64F /* Developer Test */,
 				32B810A22A56F78F00C5A64F /* Products */,
+				323E3BD22A5BFB3C00449747 /* Developer Test copy-Info.plist */,
+				323E3C052A5BFB3E00449747 /* Developer Test copy copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,8 +217,10 @@
 		32B810A32A56F78F00C5A64F /* Developer Test */ = {
 			isa = PBXGroup;
 			children = (
+				323E3B942A5AD6FE00449747 /* Localizable.strings */,
 				32B810A42A56F78F00C5A64F /* AppDelegate.swift */,
 				32B810A62A56F78F00C5A64F /* SceneDelegate.swift */,
+				323E3C082A5BFD5E00449747 /* Environments */,
 				32B810B92A56FD8D00C5A64F /* ViewControllers */,
 				32B810C12A5707F200C5A64F /* Swift */,
 				32B810B82A56FD8400C5A64F /* Storyboards */,
@@ -206,6 +254,7 @@
 		32B810C02A5707BD00C5A64F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				327C45482A59A70F00B75295 /* LanguageCollectionView */,
 				327C45452A59932200B75295 /* ClickableView */,
 				327C45402A59742C00B75295 /* ServiceLabel */,
 				327C453A2A5953BA00B75295 /* ServicesView */,
@@ -254,6 +303,7 @@
 			name = "Developer Test";
 			packageProductDependencies = (
 				327C45252A587B8000B75295 /* SDWebImage */,
+				323E3B8A2A5AAB8300449747 /* Localize_Swift */,
 			);
 			productName = "Developer Test";
 			productReference = 32B810A12A56F78F00C5A64F /* Developer Test.app */;
@@ -281,10 +331,12 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 32B810982A56F78F00C5A64F;
 			packageReferences = (
 				327C45242A587B8000B75295 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				323E3B892A5AAB8300449747 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 			);
 			productRefGroup = 32B810A22A56F78F00C5A64F /* Products */;
 			projectDirPath = "";
@@ -302,11 +354,16 @@
 			files = (
 				32B810B12A56F79100C5A64F /* LaunchScreen.storyboard in Resources */,
 				32B810CC2A570E8F00C5A64F /* TeacherCardTableViewCell.xib in Resources */,
+				323E3B922A5AD6FE00449747 /* Localizable.strings in Resources */,
 				327C45442A59744D00B75295 /* ServiceLabel.xib in Resources */,
 				32B810AE2A56F79100C5A64F /* Assets.xcassets in Resources */,
+				32E62B062A5A9A85006999E7 /* LanguageCollectionViewCell.xib in Resources */,
+				323E3C0A2A5BFD8400449747 /* Development.xcconfig in Resources */,
 				327C453E2A5953F800B75295 /* ServicesView.xib in Resources */,
+				323E3C0C2A5BFDE200449747 /* Production.xcconfig in Resources */,
 				32B810C52A57083100C5A64F /* SchoolAppBannerView.xib in Resources */,
 				32B810AC2A56F78F00C5A64F /* Main.storyboard in Resources */,
+				32E62B022A5A98E6006999E7 /* LanguageSelectCollectionViewCell.xib in Resources */,
 				327C45312A5940A400B75295 /* ContactView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,9 +377,12 @@
 			files = (
 				32B810BB2A56FDAB00C5A64F /* TeachersViewController.swift in Sources */,
 				32B810A52A56F78F00C5A64F /* AppDelegate.swift in Sources */,
+				32E62B052A5A9A85006999E7 /* LanguageCollectionViewCell.swift in Sources */,
 				32B810CB2A570E8F00C5A64F /* TeacherCardTableViewCell.swift in Sources */,
+				32E62B012A5A98E5006999E7 /* LanguageSelectCollectionViewCell.swift in Sources */,
 				327C45232A58759D00B75295 /* Student.swift in Sources */,
 				32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */,
+				323E3C0E2A5BFE6C00449747 /* Environment.swift in Sources */,
 				32B810BD2A56FDB800C5A64F /* StudentsViewController.swift in Sources */,
 				327C45422A59744200B75295 /* ServiceLabel.swift in Sources */,
 				327C45282A58841F00B75295 /* Description.swift in Sources */,
@@ -343,10 +403,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		323E3B942A5AD6FE00449747 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323E3B932A5AD6FE00449747 /* en */,
+				323E3B952A5AD70100449747 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		32B810AA2A56F78F00C5A64F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				32B810AB2A56F78F00C5A64F /* Base */,
+				323E3B8C2A5AD67B00449747 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -355,6 +425,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				32B810B02A56F79100C5A64F /* Base */,
+				323E3B8D2A5AD67B00449747 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -362,10 +433,12 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		32B810B32A56F79100C5A64F /* Debug */ = {
+		323E3C062A5BFC0800449747 /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323E3C0B2A5BFDE200449747 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -416,16 +489,54 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markomeden.developertest.development;
+				PRODUCT_NAME = "Example Development";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Production;
 		};
-		32B810B42A56F79100C5A64F /* Release */ = {
+		323E3C072A5BFC0800449747 /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323E3C0B2A5BFDE200449747 /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSF33EGXVS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Developer Test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markomeden.teachers.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Production;
+		};
+		32B810B32A56F79100C5A64F /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323E3C092A5BFD8400449747 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -455,11 +566,17 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -467,17 +584,20 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markomeden.developertest.development;
+				PRODUCT_NAME = "Example Development";
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Release;
+			name = Development;
 		};
-		32B810B62A56F79100C5A64F /* Debug */ = {
+		32B810B62A56F79100C5A64F /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323E3C092A5BFD8400449747 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,9 +614,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.markomeden.Developer-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.markomeden.teachers.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -505,38 +627,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
-		};
-		32B810B72A56F79100C5A64F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PSF33EGXVS;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Developer Test/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.markomeden.Developer-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
+			name = Development;
 		};
 /* End XCBuildConfiguration section */
 
@@ -544,24 +635,32 @@
 		32B8109C2A56F78F00C5A64F /* Build configuration list for PBXProject "Developer Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32B810B32A56F79100C5A64F /* Debug */,
-				32B810B42A56F79100C5A64F /* Release */,
+				32B810B32A56F79100C5A64F /* Development */,
+				323E3C062A5BFC0800449747 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		32B810B52A56F79100C5A64F /* Build configuration list for PBXNativeTarget "Developer Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32B810B62A56F79100C5A64F /* Debug */,
-				32B810B72A56F79100C5A64F /* Release */,
+				32B810B62A56F79100C5A64F /* Development */,
+				323E3C072A5BFC0800449747 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		323E3B892A5AAB8300449747 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		327C45242A587B8000B75295 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -573,6 +672,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		323E3B8A2A5AAB8300449747 /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 323E3B892A5AAB8300449747 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
+		};
 		327C45252A587B8000B75295 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 327C45242A587B8000B75295 /* XCRemoteSwiftPackageReference "SDWebImage" */;

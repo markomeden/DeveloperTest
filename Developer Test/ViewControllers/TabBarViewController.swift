@@ -13,7 +13,15 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        viewControllers?.forEach { $0.view }
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        tabBarController?.viewControllers?.forEach {
+//            let _ = $0.view
+//            $0.viewWillAppear(true)
+//        }
+//    }
     
 
     /*

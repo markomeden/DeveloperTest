@@ -33,7 +33,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Teachers" image="Chalkboard_Teacher" selectedImage="Chalkboard_Teacher_Black" id="qlr-IZ-rR1"/>
-                    <navigationItem key="navigationItem" title="Teachers" id="sS2-ER-RQ7"/>
+                    <navigationItem key="navigationItem" title="Teachers" id="sS2-ER-RQ7">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Teachers"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="U9e-0G-jbc" id="iJP-vw-vu9"/>
                     </connections>
@@ -66,7 +70,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Students" image="Graduation_Cap" selectedImage="Graduation_Cap_Black" id="VbE-5n-eUm"/>
-                    <navigationItem key="navigationItem" title="Students" id="YPd-sz-Pzl"/>
+                    <navigationItem key="navigationItem" title="Students" id="YPd-sz-Pzl">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Students"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="xBD-NJ-nQp" id="L8o-UX-pd9"/>
                     </connections>
@@ -96,11 +104,28 @@
                                     <constraint firstAttribute="height" constant="76" id="Gr1-9L-c8W"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-No-Wcj">
+                                <rect key="frame" x="292" y="75" width="93" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="V4d-Sg-eto"/>
+                                    <constraint firstAttribute="width" constant="93" id="qpo-aV-mWg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dhF-zH-1FS">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bRs-lE-mHD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZlJ-V1-Alj" firstAttribute="leading" secondItem="bRs-lE-mHD" secondAttribute="leading" id="2la-jT-ope"/>
+                            <constraint firstItem="LAm-No-Wcj" firstAttribute="top" secondItem="bRs-lE-mHD" secondAttribute="top" constant="16" id="Eax-cD-6h9"/>
+                            <constraint firstItem="bRs-lE-mHD" firstAttribute="trailing" secondItem="LAm-No-Wcj" secondAttribute="trailing" constant="8" id="GSd-fP-P1B"/>
                             <constraint firstItem="bRs-lE-mHD" firstAttribute="bottom" secondItem="ZlJ-V1-Alj" secondAttribute="bottom" id="Gx8-ra-oZP"/>
                             <constraint firstItem="ZlJ-V1-Alj" firstAttribute="top" secondItem="cHA-dw-FQy" secondAttribute="bottom" id="cOa-Bd-wPh"/>
                             <constraint firstItem="cHA-dw-FQy" firstAttribute="top" secondItem="bRs-lE-mHD" secondAttribute="top" id="n7I-uR-Ing"/>
@@ -109,9 +134,15 @@
                             <constraint firstItem="bRs-lE-mHD" firstAttribute="trailing" secondItem="cHA-dw-FQy" secondAttribute="trailing" id="xDP-aP-nnN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SchoolApp" id="nZQ-Ga-Muz"/>
+                    <navigationItem key="navigationItem" title="SchoolApp" id="nZQ-Ga-Muz">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="SchoolApp"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="ZlJ-V1-Alj" id="F7n-02-CVN"/>
+                        <outlet property="languageCollectionView" destination="LAm-No-Wcj" id="3sZ-8N-kkH"/>
+                        <outlet property="languageViewHeightConstraint" destination="V4d-Sg-eto" id="q8r-0u-XlI"/>
                         <outlet property="schoolAppBannerView" destination="cHA-dw-FQy" id="SCy-sN-Xlq"/>
                     </connections>
                 </viewController>
@@ -171,6 +202,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="ufQ-V0-bqO" id="zhe-5O-WLC"/>
                         <outlet property="contactView" destination="xVM-OF-wmj" id="tLw-Vz-27A"/>
                     </connections>
                 </viewController>
@@ -190,6 +222,7 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabBar" destination="rSn-iC-Htb" id="jQH-TN-Naj"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NXr-Sz-eTi"/>
                         <segue destination="abo-VJ-NEw" kind="relationship" relationship="viewControllers" id="snd-0X-LQM"/>
                     </connections>

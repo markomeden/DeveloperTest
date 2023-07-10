@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class TeachersViewController: UIViewController {
 
@@ -21,8 +22,21 @@ class TeachersViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupTableView()
         fetchTeachers()
+        
+        tabBarItem.title = "Teachers".localized()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(changeLanguage), name: NSNotification.Name(rawValue: "changeLanguage"), object: nil)
+        
     }
     
+    @objc private func changeLanguage() {
+        tabBarItem.title = "Teachers".localized()
+        tableView.reloadData()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 
     // MARK: - Setup
     func setupTableView() {
@@ -39,6 +53,7 @@ class TeachersViewController: UIViewController {
                 teacherDescriptions = []
                 
                 teachers = try await fetchTeachersFromAPI()
+                
 //                print(teachers)
                 
                 for item in teachers {

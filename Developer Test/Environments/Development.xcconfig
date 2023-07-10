@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  Developer Test
+//
+//  Created by Marko Meden User on 10/07/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Teachers-DEV
+APP_BUNDLE_ID = com.markomeden.teachers.dev
+ARCHIVE_APP_NAME = TeachersDEV
