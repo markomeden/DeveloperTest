@@ -12,6 +12,7 @@
 		323E3C0A2A5BFD8400449747 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 323E3C092A5BFD8400449747 /* Development.xcconfig */; };
 		323E3C0C2A5BFDE200449747 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 323E3C0B2A5BFDE200449747 /* Production.xcconfig */; };
 		323E3C0E2A5BFE6C00449747 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E3C0D2A5BFE6C00449747 /* Environment.swift */; };
+		323E3C112A5D9AF600449747 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E3C102A5D9AF600449747 /* UIViewController.swift */; };
 		327C45212A58750500B75295 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45202A58750500B75295 /* Teacher.swift */; };
 		327C45232A58759D00B75295 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C45222A58759D00B75295 /* Student.swift */; };
 		327C45262A587B8000B75295 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 327C45252A587B8000B75295 /* SDWebImage */; };
@@ -54,6 +55,7 @@
 		323E3C092A5BFD8400449747 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		323E3C0B2A5BFDE200449747 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		323E3C0D2A5BFE6C00449747 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		323E3C102A5D9AF600449747 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		327C45202A58750500B75295 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		327C45222A58759D00B75295 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		327C45272A58841F00B75295 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 				323E3C0B2A5BFDE200449747 /* Production.xcconfig */,
 			);
 			path = Environments;
+			sourceTree = "<group>";
+		};
+		323E3C0F2A5D9AE200449747 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				323E3C102A5D9AF600449747 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		327C451F2A5874B300B75295 /* Models */ = {
@@ -264,6 +274,7 @@
 		32B810C12A5707F200C5A64F /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				323E3C0F2A5D9AE200449747 /* Extensions */,
 				327C452D2A58A07600B75295 /* Managers */,
 				327C451F2A5874B300B75295 /* Models */,
 				32B810C82A570E5B00C5A64F /* Cells */,
@@ -377,6 +388,7 @@
 				32B810CB2A570E8F00C5A64F /* TeacherCardTableViewCell.swift in Sources */,
 				32E62B012A5A98E5006999E7 /* LanguageSelectCollectionViewCell.swift in Sources */,
 				327C45232A58759D00B75295 /* Student.swift in Sources */,
+				323E3C112A5D9AF600449747 /* UIViewController.swift in Sources */,
 				32B810C72A570DA500C5A64F /* ContainerViewController.swift in Sources */,
 				323E3C0E2A5BFE6C00449747 /* Environment.swift in Sources */,
 				32B810BD2A56FDB800C5A64F /* StudentsViewController.swift in Sources */,

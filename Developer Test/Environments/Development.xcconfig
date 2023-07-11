@@ -10,4 +10,7 @@
 
 APP_NAME = Teachers-DEV
 APP_BUNDLE_ID = com.markomeden.teachers.dev
-ARCHIVE_APP_NAME = TeachersDEV
+ARCHIVE_APP_NAME = TeachersDEVxc
+TEACHERS_API = https:/$()/zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/teachers
+SCHOOLS_API = https:/$()/zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/schools/
+STUDENTS_API = https:/$()/zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/students

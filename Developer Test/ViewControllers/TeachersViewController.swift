@@ -9,7 +9,7 @@ import UIKit
 import Localize_Swift
 
 class TeachersViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var teachers: [Teacher] = []
@@ -19,7 +19,7 @@ class TeachersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         servicesView.delegate = self
         setupTableView()
@@ -31,11 +31,11 @@ class TeachersViewController: UIViewController {
     }
     
     @objc private func changeLanguage() {
-        #if DEBUG
+#if DEBUG
         tabBarItem.title = "Teachers - DEV".localized()
-        #else
+#else
         tabBarItem.title = "Teachers".localized()
-        #endif
+#endif
         tableView.reloadData()
         servicesView.configureLabels()
     }
@@ -43,7 +43,7 @@ class TeachersViewController: UIViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-
+    
     // MARK: - Setup
     func setupTableView() {
         tableView.delegate = self
@@ -57,22 +57,25 @@ class TeachersViewController: UIViewController {
                 teachers = []
                 schools = []
                 teacherDescriptions = []
-                
-                teachers = try await fetchTeachersFromAPI()
-//                print(teachers)
+                do {
+                    teachers = try await fetchTeachersFromAPI()
+                } catch {
+                    self.showErrorDialogNoInternet()
+                }
+                //                print(teachers)
                 tableView.reloadData()
                 
                 for item in teachers {
                     schools.append(try await fetchSchool(id: item.school_id))
                 }
-//                print(schools)
+                //                print(schools)
                 tableView.reloadData()
                 
                 for item in teachers {
                     teacherDescriptions.append(try await fetchTeacherDescription(id: item.id))
                 }
-//                print(teacherDescriptions)
-//                tableView.reloadData()
+                //                print(teacherDescriptions)
+                //                tableView.reloadData()
             } catch {
                 print(error)
             }
@@ -107,11 +110,15 @@ extension TeachersViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = AppManager.shared.instantiateViewController(viewController: "DetailsViewController", storyboard: "Main") as! DetailsViewController
-        viewController.teacher = teachers[indexPath.row]
-        viewController.school = schools[indexPath.row]
-        viewController.description_ = teacherDescriptions[indexPath.row]
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if teacherDescriptions.count > indexPath.row {
+            print(teacherDescriptions.count)
+            print(indexPath.row)
+            let viewController = AppManager.shared.instantiateViewController(viewController: "DetailsViewController", storyboard: "Main") as! DetailsViewController
+            viewController.teacher = teachers[indexPath.row]
+            viewController.school = schools[indexPath.row]
+            viewController.description_ = teacherDescriptions[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
 
@@ -142,21 +149,21 @@ extension TeachersViewController : UITableViewDataSource {
 
 extension TeachersViewController {
     func fetchTeachersFromAPI() async throws -> [Teacher] {
-        let url = URL(string: "https://zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/teachers")!
+        let url = URL(string: Environment.teachersAPI)!
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoded = try JSONDecoder().decode([Teacher].self, from: data)
         return decoded
     }
     
     func fetchSchool(id: Int) async throws -> School {
-        let url = URL(string: "https://zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/schools/\(id)")!
+        let url = URL(string: "\(Environment.schoolsAPI)\(id)")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoded = try JSONDecoder().decode(School.self, from: data)
         return decoded
     }
     
     func fetchTeacherDescription(id: Int) async throws -> Description {
-        let url = URL(string: "https://zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/teachers/\(id)")!
+        let url = URL(string: "\(Environment.studentsAPI)/\(id)")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoded = try JSONDecoder().decode(Description.self, from: data)
         return decoded

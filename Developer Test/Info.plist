@@ -7,6 +7,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>SCHOOLS_API</key>
+	<string>$(SCHOOLS_API)</string>
+	<key>STUDENTS_API</key>
+	<string>$(STUDENTS_API)</string>
+	<key>TEACHERS_API</key>
+	<string>$(TEACHERS_API)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

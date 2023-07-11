@@ -11,3 +11,6 @@
 APP_NAME = Teachers-PROD
 APP_BUNDLE_ID = com.markomeden.teachers.prod
 ARCHIVE_APP_NAME = TeachersPROD
+TEACHERS_API = https:/$()/zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/teachers
+SCHOOLS_API = https:/$()/zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/schools/
+STUDENTS_API = https:/$()/zpk2uivb1i.execute-api.us-east-1.amazonaws.com/dev/students
